@@ -1,0 +1,22 @@
+:root{--slate:#4d657a;--sky:#729ec8;--sand:#d3c0a1;--olive:#635c41;--terra:#c0603a;--paper:#f6f1e7;--ink:#2b2a24}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--paper);color:var(--ink);line-height:1.6}
+header{background:var(--slate);color:#fff;display:flex;align-items:center;gap:18px;padding:12px 32px}
+header img{height:72px}
+header h1{margin:0;font-size:30px;letter-spacing:2px}
+nav{background:var(--olive);display:flex;flex-wrap:wrap;gap:4px;padding:0 32px}
+nav a{color:#fff;text-decoration:none;padding:10px 16px;font-family:Arial,sans-serif;font-size:15px}
+nav a:hover,nav a.active{background:var(--terra)}
+main{max-width:1040px;margin:0 auto;padding:24px 20px 40px}
+h2{color:var(--slate);border-bottom:3px solid var(--terra);padding-bottom:4px}
+.banner{width:100%;border-radius:6px;display:block}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:20px}
+.card{background:#fff;border:1px solid var(--sand);border-radius:6px;overflow:hidden}
+.card img{width:100%;height:170px;object-fit:cover;display:block}
+.card p{margin:10px 12px 14px;font-size:15px}
+.card h3{margin:10px 12px 0;color:var(--terra);font-size:18px}
+figure{margin:18px 0}
+figure img{width:100%;max-width:720px;display:block;margin:0 auto;border-radius:6px}
+figcaption{text-align:center;font-style:italic;color:var(--olive)}
+footer{background:var(--slate);color:var(--sand);text-align:center;padding:14px;font-family:Arial,sans-serif;font-size:14px}
+@media (max-width:600px){header{padding:10px 16px}header h1{font-size:22px}nav{padding:0 8px}}
